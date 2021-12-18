@@ -1,6 +1,7 @@
 package fn_test
 
 import (
+	"fmt"
 	"strconv"
 	"testing"
 
@@ -14,4 +15,13 @@ func TestFlatMap(t *testing.T) {
 		return []string{strconv.Itoa(i), strconv.Itoa(i * 2)}
 	})
 	require.Equal(t, mappedArr, []string{"1", "2", "2", "4", "3", "6"}, "they should be equal")
+}
+
+func ExampleFlatMap() {
+	arr := []int{1, 2, 3}
+	mappedArr := fn.FlatMap(arr, func(i int) []string {
+		return []string{strconv.Itoa(i), strconv.Itoa(i * 2)}
+	})
+	fmt.Println(mappedArr)
+	// Output: [1 2 2 4 3 6]
 }

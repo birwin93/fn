@@ -1,6 +1,7 @@
 package fn_test
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/birwin93/fn"
@@ -24,4 +25,10 @@ func TestDedupeStruct(t *testing.T) {
 
 	billys := []person{billy, sameBilly, diffBilly}
 	require.Equal(t, fn.Dedupe(billys), []person{billy, diffBilly})
+}
+
+func ExampleDedupe() {
+	arr := []int{1, 2, 3, 4, 1, 3}
+	fmt.Println(fn.Dedupe(arr))
+	// Output: [1 2 3 4]
 }

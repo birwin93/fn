@@ -1,9 +1,10 @@
 package fn
 
-func Filter[T any](arr []T, f func(T) bool) []T {
+// Removes items from array that does not pass predicate
+func Filter[T any](arr []T, predicate func(T) bool) []T {
 	newList := make([]T, 0)
 	for _, val := range arr {
-		if f(val) {
+		if predicate(val) {
 			newList = append(newList, val)
 		}
 	}
