@@ -9,14 +9,14 @@ import (
 
 func TestLast(t *testing.T) {
 	arr := []int{1, 2, 3}
-	val, err := fn.Last(arr)
-	require.Equal(t, *val, 3)
-	require.Nil(t, err)
+	val, ok := fn.Last(arr)
+	require.Equal(t, val, 3)
+	require.True(t, ok)
 }
 
-func TestLastError(t *testing.T) {
+func TestLastEmpty(t *testing.T) {
 	arr := []int{}
-	val, err := fn.Last(arr)
-	require.Nil(t, val)
-	require.Equal(t, err, &fn.EmptyArrayError{})
+	val, ok := fn.Last(arr)
+	require.False(t, ok)
+	require.Equal(t, val, 0)
 }

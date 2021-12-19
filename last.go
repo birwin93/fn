@@ -1,12 +1,13 @@
 package fn
 
 // Grabs last item in array
-// Will return error if array is empty
-func Last[T any](arr []T) (*T, error) {
+// Will return empty value and false if array is empty
+func Last[T any](arr []T) (T, bool) {
 	if len(arr) == 0 {
-		return nil, &EmptyArrayError{}
+		var zero T
+		return zero, false
 	}
 
 	val := arr[len(arr)-1]
-	return &val, nil
+	return val, true
 }
