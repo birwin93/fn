@@ -45,15 +45,23 @@ func main() {
 ```
 
 ## Supported Functions
+
+### Arrays / Slices
+
 - [Contains](https://github.com/birwin93/fn/blob/main/contains.go)
 - [Dedupe](https://github.com/birwin93/fn/blob/main/dedupe.go)
 - [Filter](https://github.com/birwin93/fn/blob/main/filter.go)
 - [FlatMap](https://github.com/birwin93/fn/blob/main/flatmap.go)
 - [Group](https://github.com/birwin93/fn/blob/main/group.go)
+- [Intersect](https://github.com/birwin93/fn/blob/main/intersect.go)
 - [Map](https://github.com/birwin93/fn/blob/main/map.go)
 - [Last](https://github.com/birwin93/fn/blob/main/last.go)
 - [Reduce](https://github.com/birwin93/fn/blob/main/reduce.go)
 - [Sum](https://github.com/birwin93/fn/blob/main/sum.go)
+
+### Maps
+
+- [GetOr](https://github.com/birwin93/fn/blob/main/get_or.go)
 
 See the [open issues](https://github.com/birwin93/fn/issues) for a full list of proposed features (and known issues).
 
