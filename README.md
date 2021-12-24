@@ -50,6 +50,7 @@ func main() {
 
 - [Contains](https://github.com/birwin93/fn/blob/main/contains.go)
 - [Dedupe](https://github.com/birwin93/fn/blob/main/dedupe.go)
+- [Equal](https://github.com/birwin93/fn/blob/main/equal.go))
 - [Filter](https://github.com/birwin93/fn/blob/main/filter.go)
 - [FlatMap](https://github.com/birwin93/fn/blob/main/flatmap.go)
 - [Group](https://github.com/birwin93/fn/blob/main/group.go)
