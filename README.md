@@ -11,8 +11,8 @@ fn is a collection of go functional operators with generics
 Go 1.18
 
 ```sh
-go install golang.org/dl/go1.18beta1@latest
-go1.18beta1 download
+go install golang.org/dl/go1.181@latest
+go1.18 download
 ```
 
 ### Installation
